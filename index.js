@@ -302,26 +302,29 @@ fnbs.forEach(input => {
 });
 
 standard.forEach(input => {
+    let submit4 = document.getElementById('submit4')
+    let error7 = document.getElementById('error7')
     // submit2.style.margin = '-2% 0 0 0'
     input.addEventListener('input', (event) =>{
         if(standardUsername.value === "" || standardPassword.value === "" ){
-            error2.style.display = "block";
-            error2.innerHTML = "kindly fill all the required details above";
-            error2.style.color = "red";
-            error2.style.fontSize =  "300%"
-            error2.style.textAlign =  "center"
+            error7.style.display = "block";
+            error7.innerHTML = "kindly fill all the required details above";
+            error7.style.color = "red";
+            error7.style.fontSize =  "300%"
+            error7.style.textAlign =  "center"
             // Disable the button if the input is empty or contains only spaces
             // submit2.disabled = true;
             
         }else{
             // Enable the button if the input is not empty
             // submit2.disabled = false;
+            submit4.style.display = 'block';
             console.log('hhh')
-            submit3.addEventListener('click', ()=>{
-                submit3.style.backgroundColor = "yellow"
-                submit3.style.color = "black"
+            submit4.addEventListener('click', ()=>{
+                submit4.style.backgroundColor = "yellow"
+                submit4.style.color = "black"
             })
-            error2.innerHTML = '';
+            error7.innerHTML = '';
                
             }
     })
